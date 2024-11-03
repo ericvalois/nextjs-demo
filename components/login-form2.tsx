@@ -11,6 +11,11 @@ export function Dashboard() {
 			<div className="w-full flex items-center justify-center lg:min-h-[600px] xl:min-h-[800px]">
 				<div className="flex items-center justify-center py-12">
 					<div className="mx-auto grid w-[350px] gap-6">
+						<img
+							className="block mx-auto"
+							src="https://app.workind.ca/assets/img/Logo_ouverture.svg"
+							alt="logo"
+						/>
 						<div className="grid gap-2 text-center">
 							<h1 className="text-3xl font-bold">Login</h1>
 							<p className="text-balance text-muted-foreground">
@@ -56,12 +61,23 @@ export function Dashboard() {
 				</div>
 			</div>
 
-			<div className="hidden bg-muted lg:block">
-				<img
-					src="https://app.workind.ca/assets/img/Image_ouverture.png"
-					alt="Image"
-					className="h-full w-full object-cover "
-				/>
+			<div
+				className="hidden bg-muted lg:flex items-center justify-center flex-col px-10"
+				style={{
+					backgroundImage: `url(https://app.workind.ca/assets/img/Image_ouverture.png)`,
+					backgroundSize: "cover",
+				}}
+			>
+				<div className="max-w-xl text-balance">
+					<h1 className="text-6xl w-full font-bold">
+						<span className="text-white">Plus de simplicité.</span>
+						<br />
+						<span className="text-muted">meilleur équilibre</span>
+					</h1>
+					<p className="text-white text-2xl font-semibold w-full text-pretty">
+						Des services qui contribuent au mieux-être des employés
+					</p>
+				</div>
 			</div>
 		</div>
 	);
